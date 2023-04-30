@@ -25,7 +25,7 @@ export async function execute(
     options: Options,
     context: BuilderContext,
 ): Promise<BuilderOutput> {
-    const Launcher = require(path.join(process.cwd(), 'node_modules', '@wdio', 'cli')).default
+    const Launcher = require(path.join(process.cwd(), 'node_modules', '@wdio', 'cli')).Launcher
 
     // ensure that only one of these options is used
     if (options.devServerTarget && options.baseUrl) {
